@@ -1,0 +1,282 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+}
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+    color: #000000;
+	text-decoration: none;
+}
+
+.logo {
+	margin: 0;
+    font-size: 2.40em;
+    font-family: 'Bad Script', cursive;
+    /* font-style: italic; */
+}
+.header, .main-nav {
+	display: flex;
+	
+}
+.main-nav {
+	margin-top: 5px;
+	
+}
+.header {
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.178);
+}
+
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+  letter-spacing: 3px; 
+}
+
+.main-nav a {
+	color: #000000;
+	font-size: 1em;
+}
+
+.main-nav a:hover {
+	color: #ffc7c7;
+}
+
+/* header */
+.hero-Img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Best Sellers */
+.section-heading{
+	margin: 0 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section-heading h2{
+	font-family: 'Caveat';
+	text-align: center;
+	color: #000000;
+	width: 40%;
+	letter-spacing: .3rem;
+	font-size: 2rem;
+}
+.line{
+	background-color: #ffc7c7;
+	width: 100%;
+	height: .20rem;
+}
+.products-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.Products{
+	width: 20rem;
+	height: 35rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.Products  img{
+	width: 90%;
+	max-width: 100%;
+}
+.Products h3{
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-size: 1rem;
+	text-align: center;
+	font-family: 'Caveat';
+}
+.Products .price {
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-size: 1rem;
+	padding: .4rem 0;
+}
+	  /* BUTTON */
+.button{
+	font-size: 1rem;
+	color: #fff;
+	background-color: #E6B0AE;
+	border: 2px solid #bdb8b8;
+	padding: .8rem 3rem;
+	margin-top: 1rem;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+/* Ads for the home page */
+.Ads{
+	margin-top: 10rem;
+	margin-bottom: 5rem;
+}
+.Ads  img{
+	width: 45%;
+	float: right;
+	margin-right: 2.7rem;
+}
+
+/* Skincare Value Sets Section */
+.skincare-value-sets{
+	margin-top: 30rem;
+}
+/* More Beauty For You Section */
+.ads-section{
+	text-align: center;
+}
+.ads-section h2{
+	margin-top: 8.5rem;
+	margin-bottom: 1rem;
+	font-family: 'Caveat';
+	text-align: center;
+	color: #000000;
+	letter-spacing: .4rem;
+	font-size: 2.4rem;
+}
+.ads-section img{
+	width: 18%;
+	padding-right: 1.5rem;
+}
+.shipping-ad{
+	box-sizing: content-box;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 13rem;
+	padding-right:13rem;
+}
+.worldWide-shipping{
+	margin-top: 4rem;
+	width: 100%;
+	height: 9rem;
+	color: #fff;
+	background-color: #ffb0b0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Caveat';
+	letter-spacing: .4rem;
+}
+/* Footer */ 
+#footer{
+	height: 8rem;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+	color: #000000;
+	font-family: 'Caveat';
+	text-align: center;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+  }
+  .social-media-links{
+	padding-top: 1rem;
+	font-size: 1.9rem;
+  }
+
+  /* Social Media Links */
+  .fa {
+    text-align: center;
+    text-decoration: none;
+  }
+   .fa:hover {
+    opacity: 0.9;
+  }
+   .fa-facebook, .fa-twitter,.fa-youtube,.fa-instagram {
+    color: #000000;
+  }
+/* ================================= 
+  Media Queries
+==================================== */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .header, .main-nav {
+        display: flex;
+        font-size: 5rem;
+        letter-spacing: 1rem;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	.section-heading{
+		margin: 2rem 6rem;
+	}
+	.line{
+		height: 1rem;
+	}
+	.section-heading h2{
+		font-size: 5.5rem;
+	}
+	.Products{
+		width: 60rem;
+		height: 90rem;
+	}
+	.Products .price {
+		font-size: 3rem;
+	}
+	.Products h3{
+		font-size: 3rem;
+	}
+	.button{
+		font-size: 4rem;
+		padding: 4rem 5rem;
+	}
+	.Ads{
+		margin-top: 25rem;
+		margin-right: 7rem;
+	}
+	.skincare-value-sets{
+		margin-top: 90rem;
+	}
+	.ads-section h2{
+		margin-top: 20rem;
+		margin-bottom: 3rem;
+		font-size: 7rem;
+	}
+	.worldWide-shipping{
+		font-size: 5rem;
+		height: 18rem;
+	}
+      footer{
+          font-size: 5rem;
+          height: 10rem;
+      }
+      .social-media-links{
+          font-size: 4rem;
+      }
+
+}
